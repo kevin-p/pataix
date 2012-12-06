@@ -30,8 +30,8 @@ public class ADataSelect
     
     public Vector<ADataItem> SearchItem(Location Loc, int maxPerimeter) throws JSONException, IOException 
     {
-		if (VectADataItem.isEmpty()) VectADataItem.clear(); // On vide le vector précédement remplis
-    	//On vas chercher les données
+		if (VectADataItem.isEmpty()) VectADataItem.clear(); // On vide le vector prï¿½cï¿½dement remplis
+    	//On vas chercher les donnï¿½es
     	JSONArray donnees = jsonArrayFromUrl();
     	
 	    	for(int i = 0; i < donnees.length(); ++i)
@@ -67,12 +67,12 @@ public class ADataSelect
 
     JSONArray   jsonArrayFromUrl() throws IOException
     {  
-        // On récupère un client capable d'envoyer des requêtes
+        // On rï¿½cupï¿½re un client capable d'envoyer des requï¿½tes
         HttpClient client = new DefaultHttpClient();
         HttpGet getAction = new HttpGet(url);
         HttpResponse response = client.execute(getAction);
      
-        // on récupère le payload de la réponse en String
+        // on rï¿½cupï¿½re le payload de la rï¿½ponse en String
         HttpEntity entity = response.getEntity();
         String entityStr = (entity == null) ? null : EntityUtils.toString(entity);
      
@@ -83,7 +83,7 @@ public class ADataSelect
         } 
         catch (Exception ex) 
         {
-            throw new IOException("Invalid response from server !",ex);
+            throw new IOException("Invalid response from server !");
         }
     }
     
