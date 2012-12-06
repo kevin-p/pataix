@@ -59,7 +59,7 @@ public class MainActivity extends MapActivity {
 		 		mc.setCenter(new GeoPoint((int) (latitude * 1000000.0),(int) (longitude * 1000000.0)));
 		 		mc.setZoom(17);
 		 		
-		 		txtLatitude.setText(""+latitude);
+		 		txtLatitude.setText("goooo"+latitude);
 		 		txtLongitude.setText(""+longitude);
 				
 			}
