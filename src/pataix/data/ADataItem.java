@@ -1,5 +1,6 @@
 package pataix.data;
 
+
 public class ADataItem 
 {
 

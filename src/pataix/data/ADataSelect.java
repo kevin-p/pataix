@@ -19,6 +19,7 @@ import org.json.JSONObject;
 public class ADataSelect
 {
 
+
     protected Vector <ADataItem> VectADataItem = new Vector<ADataItem>();; //Vector contenant les items dans MaxPerimeter
     protected String url = new String();
     
